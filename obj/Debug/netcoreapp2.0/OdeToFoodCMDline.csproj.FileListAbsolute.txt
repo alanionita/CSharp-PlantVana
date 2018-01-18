@@ -1,0 +1,11 @@
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/OdeToFoodCMDline.deps.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/OdeToFoodCMDline.runtimeconfig.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/OdeToFoodCMDline.runtimeconfig.dev.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/OdeToFoodCMDline.dll
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/OdeToFoodCMDline.pdb
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.csprojResolveAssemblyReference.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.csproj.CoreCompileInputs.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.AssemblyInfoInputs.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.AssemblyInfo.cs
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.dll
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/OdeToFoodCMDline.pdb

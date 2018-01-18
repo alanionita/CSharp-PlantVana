@@ -1,0 +1,41 @@
+@model Plantvana.ViewModels.HomeIndexViewModel
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plantvana - where you'll find your next vegan bodega'</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+<body>
+    <section class="container is-widescreen">
+      <h1 class="title is-size-1 has-text-centered">
+        Plantvana
+      </h1>
+      <p class="subtitle is-size-3 has-text-centered has-text-danger">
+        "@Model.CurrentMessage"
+      </p>
+      <div class="columns is-multiline is-mobile is-centered" >
+        @foreach(var restaurant in Model.Restaurants) {
+                <article class="column is-four-fifths-mobile is-two-fifths-tablet is-one-third-desktop card">
+                    <div class="level">
+                        <div class="level-left">
+                            <h3 class="title is-size-4">
+                                @restaurant.Name
+                            </h3>
+                        </div>
+                    </div>
+                    <figure class="image is-1by1">    
+                    <img class="card-image" src="@restaurant.Thumbnail"/>
+                    </figure>        
+                    <a class="button is-danger" asp-action="Details" asp-route-id="@restaurant.Id">More</a>
+                </article>
+            }
+      </div>
+    <a class="button" asp-action="Create">Add a restaurant</a>
+    </section>
+</body>
+
+</html>

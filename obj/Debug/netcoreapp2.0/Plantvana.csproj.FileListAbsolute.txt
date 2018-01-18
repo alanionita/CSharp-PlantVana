@@ -1,0 +1,11 @@
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/Plantvana.deps.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/Plantvana.runtimeconfig.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/Plantvana.runtimeconfig.dev.json
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/Plantvana.dll
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/bin/Debug/netcoreapp2.0/Plantvana.pdb
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.csprojResolveAssemblyReference.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.csproj.CoreCompileInputs.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.AssemblyInfoInputs.cache
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.AssemblyInfo.cs
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.dll
+/Users/alanionita/Documents/dotnet-projects/OdeToFoodCMDline/obj/Debug/netcoreapp2.0/Plantvana.pdb
