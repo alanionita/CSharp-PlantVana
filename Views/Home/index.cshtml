@@ -1,41 +1,34 @@
 @model Plantvana.ViewModels.HomeIndexViewModel
+@section css {
+    <link href="@Url.Content("~/main.css")" rel="stylesheet"/>
+}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
     <title>Plantvana - where you'll find your next vegan bodega'</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
-    <section class="container is-widescreen">
-      <h1 class="title is-size-1 has-text-centered">
-        Plantvana
-      </h1>
-      <p class="subtitle is-size-3 has-text-centered has-text-danger">
+    <main>
+      <h1 class="header">Plantvana</h1>
+      <p class="header">
         "@Model.CurrentMessage"
       </p>
-      <div class="columns is-multiline is-mobile is-centered" >
+      <div class="restaurants" >
         @foreach(var restaurant in Model.Restaurants) {
-                <article class="column is-four-fifths-mobile is-two-fifths-tablet is-one-third-desktop card">
-                    <div class="level">
-                        <div class="level-left">
-                            <h3 class="title is-size-4">
-                                @restaurant.Name
-                            </h3>
-                        </div>
-                    </div>
-                    <figure class="image is-1by1">    
-                    <img class="card-image" src="@restaurant.Thumbnail"/>
-                    </figure>        
-                    <a class="button is-danger" asp-action="Details" asp-route-id="@restaurant.Id">More</a>
-                </article>
-            }
-      </div>
-    <a class="button" asp-action="Create">Add a restaurant</a>
-    </section>
+            <article class="restaurant">
+                <h3 class="">@restaurant.Name</h3>
+                <img class="image" src="@restaurant.Thumbnail"/>
+                <a class="" asp-action="Details" asp-route-id="@restaurant.Id">More</a>
+            </article>
+        }
+      </div>              
+      <div class="footer">
+        <a asp-action="Create">Add a restaurant</a>
+      </div>          
+    </main>
 </body>
-
 </html>

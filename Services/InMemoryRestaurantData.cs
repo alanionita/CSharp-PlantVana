@@ -33,7 +33,15 @@ namespace Plantvana.Services
                     Description = "Fiery Spanish reciped made from lentils, veg, and other plants", 
                     Postcode = "M3 7NB",
                     Thumbnail = "https://www.archanaskitchen.com//images/archanaskitchen/Mexican_Cuisine/Smoked_Vegetarian_Spanish_Rice_Recipe_Mexican_Rice-1.jpg"
+                },
+                new Restaurant{
+                    Id = 4,
+                    Name = "Chickadeepeas",
+                    Description = "Everything made from chickpeas",
+                    Postcode = "M7 4YU",
+                    Thumbnail = "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--192471_11.jpg"
                 }
+
             };
         }
         public IEnumerable<Restaurant> GetAll()
