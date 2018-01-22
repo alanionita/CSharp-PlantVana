@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Merienda+One" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Homemade+Apple|Merienda+One" rel="stylesheet">  
     <title>PlantVana - where you'll find your next vegan bodega'</title>
 </head>
 <body>
@@ -30,14 +30,15 @@
       <section class="content">
                 <ul>
                     @foreach(var restaurant in Model.Restaurants) {
-                        <li>        
-                            <article class="card">
+                        <li>
+                            <a asp-action="Details" asp-route-id="@restaurant.Id" alt="clickable area link to details page">
+                                <article class="card">
                                     <img class="centered" src="@restaurant.Thumbnail"/>
-                                <section class="card-info">    
-                                    <h3>@restaurant.Name</h3>
-                                    <a asp-action="Details" asp-route-id="@restaurant.Id">More</a>
-                                </section>        
-                            </article>
+                                    <section class="card-info">    
+                                        <h3>@restaurant.Name</h3>
+                                    </section>        
+                                </article>
+                            </a>
                         </li>            
                     }
                 </ul>    

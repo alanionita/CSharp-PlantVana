@@ -28,14 +28,14 @@
 
 .content li {
     height: 400px;
-    width: 370px;
+    width: 400px;
     display: inline-block;
     margin: 0 auto;
 }
 
 .card {
     position: relative;
-    width: 370px;
+    width: 400px;
     height: 400px;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -50,13 +50,14 @@
 }
 
 .card .card-info {
+    font-family: 'Russo One', sans-serif;
     position: absolute;
     height: 100%;
-    top: 200px;
+    top: 140px;
     left: 0;
     width: 100%;
     color: white;
-    font-size: 20px;
+    font-size: 30px
 }
 
 .card img {
@@ -64,4 +65,5 @@
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
+    filter: brightness(70%);
 }
