@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{CFE0ECCB-F576-422F-A1AF-B1BF2F78D349}|Default">
   <MonoDevelop.Ide.ItemProperties.Plantvana PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/main.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/InMemoryRestaurantData.cs">
     <Files>
-      <File FileName="wwwroot/main.css" Line="10" Column="2" />
+      <File FileName="wwwroot/main.css" Line="16" Column="2" />
+      <File FileName="Views/Home/index.cshtml" Line="39" Column="47" />
+      <File FileName="Services/InMemoryRestaurantData.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

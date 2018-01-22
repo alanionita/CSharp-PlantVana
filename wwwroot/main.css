@@ -1,44 +1,59 @@
-﻿body {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)));
+﻿.main-header {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Homemade Apple', cursive;
+    color: #30c300;
 }
 
-.header {
-    grid-row: 1/-1;
+.textOfTheDay {
+    text-align: center;
+    background-color: #ffd420;
+    font-family: 'Merienda One', cursive;
+    font-size: 1.5em;
+    color: #000000;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0px;
     text-align: center;
 }
 
-.footer {
-    grid-row: 1/-1;
-    text-align: center
+.content li {
+    height: 400px;
+    width: 370px;
+    display: inline-block
 }
 
-.restaurants {
-    display: grid;
-    grid-auto-rows: 400px;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr;
-    grid-gap: 10px
+.card {
+    width: 370px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px
 }
 
-@media only screen and (min-width: 600px) {
-    .restaurants {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
-@media only screen and (min-width: 768px) {
-    .restaurants {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
-.restaurant {
- 
-}
+.card .card-info {
+    padding: 2px 16px;
+    color: red
 
-.image {
-    height:350px;
-    width: 350px;
 }

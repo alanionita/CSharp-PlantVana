@@ -9,26 +9,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <title>Plantvana - where you'll find your next vegan bodega'</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Merienda+One" rel="stylesheet">  
+    <title>PlantVana - where you'll find your next vegan bodega'</title>
 </head>
 <body>
-    <main>
-      <h1 class="header">Plantvana</h1>
-      <p class="header">
-        "@Model.CurrentMessage"
-      </p>
-      <div class="restaurants" >
-        @foreach(var restaurant in Model.Restaurants) {
-            <article class="restaurant">
-                <h3 class="">@restaurant.Name</h3>
-                <img class="image" src="@restaurant.Thumbnail"/>
-                <a class="" asp-action="Details" asp-route-id="@restaurant.Id">More</a>
-            </article>
-        }
-      </div>              
-      <div class="footer">
-        <a asp-action="Create">Add a restaurant</a>
-      </div>          
+    <main class="wrapper">
+      <header class="main-header">
+            <h1>Plantvana</h1>
+      </header>
+      <nav class="main-nav">
+            <ul>
+                <li><a asp-action="Create">Add a restaurant</a></li>
+                <li><a href="">Nav 2</a></li>
+                <li><a href="">Nav 3</a></li>
+            </ul>
+      </nav>      
+      <section class="textOfTheDay">
+            <p>"@Model.CurrentMessage"</p>
+      </section>      
+      <section class="content">
+                <ul>
+                    @foreach(var restaurant in Model.Restaurants) {
+                        <li>        
+                            <article class="card">
+                                <figure class="card-image">
+                                    <img src="@restaurant.Thumbnail"/>
+                                </figure>
+                                <section class="card-info">    
+                                    <h3>@restaurant.Name</h3>
+                                    <a asp-action="Details" asp-route-id="@restaurant.Id">More</a>
+                                </section>        
+                            </article>
+                        </li>            
+                    }
+                </ul>    
+      </section> 
     </main>
 </body>
 </html>

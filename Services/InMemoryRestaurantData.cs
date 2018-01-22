@@ -25,7 +25,7 @@ namespace Plantvana.Services
                     Name = "Kentuky Fried Chickpeas", 
                     Description = "Battered and deep fried chickpea mix using the Colonel's secret recipe", 
                     Postcode = "M1 6AE",
-                    Thumbnail = "https://i2.wp.com/tinykitchenchronicles.com/wordpress/wp-content/uploads/2016/04/DSC02525.jpg?resize=600%2C559&ssl=1"
+                    Thumbnail = "http://www.theedgyveg.com/wp-content/uploads/2015/06/bonafidechicken31.jpg"
                 },
                 new Restaurant{ 
                     Id = 3, 
