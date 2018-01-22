@@ -30,7 +30,6 @@
     height: 400px;
     width: 400px;
     display: inline-block;
-    margin: 0 auto;
 }
 
 .card {
@@ -42,7 +41,10 @@
     transition: 0.3s;
     border-radius: 5px;
     background: rgba(70, 72, 82, 0.3)
+}
 
+.content article {
+    margin: 0;
 }
 
 .card:hover {
