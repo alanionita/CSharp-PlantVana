@@ -23,29 +23,45 @@
         margin: 0;
     }
 
-    .main-header nav {
-        
+   .main-header nav > ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
     }
 
-        .main-header nav > ul {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+    .main-header nav li {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 1rem;
+    }
 
-        }
+.nav-item a:link, a:visited {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    border-color: black;
+}
 
-        .main-header nav li {
-            display: inline-block;
-            margin: 0 1rem;
-        }
+.nav-item a:hover, a:active {
+    background-color: #FF0041;
+    color: white
+
+}
 
 .messageOfTheDay p {
     font-family: 'Merienda One', cursive;
     font-size: 1.5em;
-    color: #000000;
+    color: #FF0041;
     text-align: center;
     margin: 0;
+    text-shadow: 0.5px 0px black;
+
 }
 
 .content {
@@ -60,15 +76,15 @@
 }
 
 .content li {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     display: inline-block;
 }
 
 .card {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -88,11 +104,12 @@
     font-family: 'Russo One', sans-serif;
     position: absolute;
     height: 100%;
-    top: 140px;
+    top: 110px;
     left: 0;
     width: 100%;
     color: white;
-    font-size: 30px
+    font-size: 30px;
+    text-shadow: 2px 1px black;
 }
 
 .card img {
