@@ -1,18 +1,51 @@
-﻿.main-header {
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Homemade Apple', cursive;
-    color: #30c300;
+﻿.wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff
 }
 
-.textOfTheDay {
+.main-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
-    background-color: #ffd420;
+}
+
+    .main-header h1 {
+        padding-left: 20px;
+        align-self: flex-start;
+        font-size: 2em;
+        font-family: 'Homemade Apple', cursive;
+        color: #000;
+        margin: 0;
+    }
+
+    .main-header nav {
+        
+    }
+
+        .main-header nav > ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        .main-header nav li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+.messageOfTheDay p {
     font-family: 'Merienda One', cursive;
     font-size: 1.5em;
     color: #000000;
-    padding-top: 0.5px;
-    padding-bottom: 0.5px
+    text-align: center;
+    margin: 0;
 }
 
 .content {
@@ -69,3 +102,5 @@
     border-radius: 5px;
     filter: brightness(70%);
 }
+
+
