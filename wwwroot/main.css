@@ -254,7 +254,7 @@
  Larger screen styling
  Horizontal menu
 */
-@media (min-width: 768px) {
+@media (min-width: 770px) {
 
     .main-header {
         justify-content: space-between;
