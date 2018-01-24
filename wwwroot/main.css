@@ -44,7 +44,7 @@
 .dailyMessage p {
     font-family: 'Merienda One', cursive;
     font-size: 1.5em;
-    color: #FF0041;
+    color: #FF004F;
     text-align: center;
     margin: 0;
     text-shadow: 0.5px 0px black;
@@ -148,7 +148,7 @@
 */
 .main-menu {
     position: absolute;
-    left: -200px;
+    left: -400px;
     top: 0;
     height: 100%;
     overflow-y: scroll;
@@ -159,6 +159,7 @@
 
     .main-menu ul {
         list-style: none;
+        display: inline-grid;
         margin: 0;
         padding: 2.5em 0 0;
         /* Hide shadow w/ -8px while 'closed' */
@@ -166,32 +167,28 @@
         -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
         box-shadow: -8px 0 8px rgba(0,0,0,.5);
         min-height: 100%;
-        width: 200px;
-        background: #1a1a1a
+        width: 400px;
+        background: #FF004F;
     }
 
     .main-menu a {
+        text-transform: uppercase;
         display: block;
         padding: .75em 15px;
+        font-family: sans-serif;
         line-height: 1em;
-        font-size: 1em;
+        font-size: 1.5em;
         color: #fff;
         text-decoration: none;
-        border-bottom: 1px solid #383838
-    }
-
-    .main-menu li:first-child a {
-        border-top: 1px solid #383838
     }
 
     .main-menu a:hover,
     .main-menu a:focus {
         background: #333;
-        text-decoration: underline
     }
 
     .main-menu .menu-close {
-        position: absolute;
+        font-size:1.5em;
         right: 0;
         top: 0
     }
@@ -284,11 +281,15 @@
             background: none
         }
 
+        .main-menu ul a {
+            font-size: 1em;
+        }
+
         .main-menu a:link, a:visited {
             color: black;
             border: 1px solid;
             border-color: black;
-            text-decoration: none
+            text-decoration: none;
 
         }
 
@@ -297,9 +298,9 @@
                 background: none; /* Remove background from off-canvas styling */
                 color: #c00
             }
-           
+
         .main-menu a:hover, a:active {
-            background-color: #FF0041;
+            background-color: #FF004F;
             color: white
         }  
 }

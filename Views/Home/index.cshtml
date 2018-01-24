@@ -32,18 +32,20 @@
                  role="navigation"
                  aria-expanded="false"
                  aria-label="Main menu">
-                <a href="#main-menu-toggle" 
-                   class="menu-close"
-                   role="button"
-                   id="main-menu-close"
-                   aria-expanded="false"
-                   aria-controls="main-menu"
-                   aria-label="Close main menu">
-                    <span class="sr-only">Close main menu</span>
-                    <span class="far fa-window-close" aria-hidden="true"></span>
-                </a>    
                 <ul>
-                    <li class="nav-item"><a asp-action="Create">Add a restaurant</a></li>
+                    <li class="nav-item">
+                            <a href="#main-menu-toggle" 
+                               class="menu-close"
+                               role="button"
+                               id="main-menu-close"
+                               aria-expanded="false"
+                               aria-controls="main-menu"
+                               aria-label="Close main menu">
+                                    <span class="sr-only">Close main menu</span>
+                                    <span class="far fa-times-circle" aria-hidden="true"></span>
+                            </a>
+                    </li>    
+                    <li class="nav-item"><a asp-action="Create">Add restaurant</a></li>
                     <li class="nav-item"><a href="">About</a></li>
                     <li class="nav-item"><a href="">Contact</a></li>
                 </ul>
