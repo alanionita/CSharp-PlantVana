@@ -1,110 +1,103 @@
 ﻿/* main site wrapper class */
 .wrapper {
-    min-width: 100%;
-    min-height: 100%;
-    background-color: #fff
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
 }
 
 /* header section */
 .main-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-    /* header logo section */
-    .main-header h1 {
-        padding-left: 20px;
-        align-self: flex-start;
-        font-size: 2em;
-        font-family: 'Homemade Apple', cursive;
-        color: #000;
-        margin: 0;
-    }
+/* header logo section */
+.main-header h1 {
+  padding-left: 20px;
+  align-self: flex-start;
+  font-size: 2em;
+  font-family: "Homemade Apple", cursive;
+  color: #000;
+  margin: 0;
+}
 
-     header menu section 
-    .main-header nav > ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+header menu section .main-header nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
-    }
-
-    .main-header nav li {
-        text-decoration: none;
-        display: inline-block;
-        margin: 0 1rem;
-    }
+.main-header nav li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
 
 .dailyMessage p {
-    font-family: 'Merienda One', cursive;
-    font-size: 1.5em;
-    color: #FF004F;
-    text-align: center;
-    margin: 0;
-    text-shadow: 0.5px 0px black;
+  font-family: "Merienda One", cursive;
+  font-size: 1.5em;
+  color: #ff004f;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0.5px 0px black;
 }
 
 .content {
-    height: 100%;
-    width: 100%;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1.5fr));
+  grid-gap: 1em;
+  justify-items: center;
 }
-
-    .content ul {
-        list-style-type: none;
-        padding: 0px;
-        text-align: center;
-    }
-
-    .content li {
-        height: 350px;
-        width: 350px;
-        display: inline-block;
-    }
-
-    .content article {
-        margin: 0
-    }
 
 .card {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    background: rgba(70, 72, 82, 0.3)
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.6s;
+  height: 350px;
+  width: 350px;
+  border-radius: 5px;
+  background: rgba(70, 72, 82, 0.3);
+  text-align: center;
 }
 
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
-    }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
 
-    .card .card-info {
-        font-family: 'Russo One', sans-serif;
-        position: absolute;
-        height: 100%;
-        top: 110px;
-        left: 0;
-        width: 100%;
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 1px black;
-    }
+.card .card-info {
+  font-family: "Russo One", sans-serif;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 1px black;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
 
-    .card img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-        filter: brightness(70%);
-    }
+.card .card-info h1 {
+  word-break: keep-all;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(60%);
+}
 
 /* ////////////////////////////////////*/
 /* ////////////////////////////////////*/
@@ -118,133 +111,136 @@
 
 /* Screen reader only */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* Button styling */
 .menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333
+  display: inline-block;
+  padding: 0.75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
 }
 
-    .menu-toggle:hover,
-    .menu-toggle:focus {
-        color: #c00
-    }
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
 
 /*
  Default styles + Mobile first
  Offscreen menu style
 */
 .main-menu {
-    position: absolute;
-    left: -400px;
-    top: 0;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    transition: left 0.3s ease, box-shadow 0.3s ease;
-    z-index: 999
+  position: absolute;
+  left: -400px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.4s ease, box-shadow 0.4s ease;
+  z-index: 999;
 }
 
-    .main-menu ul {
-        list-style: none;
-        display: inline-grid;
-        margin: 0;
-        padding: 2.5em 0 0;
-        /* Hide shadow w/ -8px while 'closed' */
-        -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-        -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-        box-shadow: -8px 0 8px rgba(0,0,0,.5);
-        min-height: 100%;
-        width: 400px;
-        background: #FF004F;
-    }
+.main-menu ul {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 2em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 400px;
+  background: #ff004f;
+  grid-row: auto;
+  justify-content: center;
+  align-content: flex-start
+}
 
-    .main-menu a {
-        text-transform: uppercase;
-        display: block;
-        padding: .75em 15px;
-        font-family: sans-serif;
-        line-height: 1em;
-        font-size: 1.5em;
-        color: #fff;
-        text-decoration: none;
-    }
+.main-menu a {
+  text-transform: uppercase;
+  display: block;
+  padding: 0.75em 15px;
+  font-family: sans-serif;
+  line-height: 1em;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
 
-    .main-menu a:hover,
-    .main-menu a:focus {
-        background: #333;
-    }
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+}
 
-    .main-menu .menu-close {
-        font-size:1.5em;
-        right: 0;
-        top: 0
-    }
+.main-menu .menu-close {
+  font-size: 1.5em;
+  right: 0;
+  top: 0;
+}
 
-    /*
+/*
  On small devices, allow it to toggle...
 */
-    /*
+/*
  :target for non-JavaScript
  aria-expanded="true/false" will be for JavaScript
 */
-    .main-menu:target,
-    .main-menu[aria-expanded="true"] {
-        left: 0;
-        outline: none;
-        -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-        -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-        box-shadow: 3px 0 12px rgba(0,0,0,.25)
-    }
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+}
 
-        .main-menu:target .menu-close,
-        .main-menu[aria-expanded="true"] .menu-close {
-            z-index: 1001
-        }
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
 
-        .main-menu:target ul,
-        .main-menu[aria-expanded="true"] ul {
-            position: relative;
-            z-index: 1000
-        }
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
 
-        /* 
+/* 
  We could us `.main-menu:target:after`, but
  it wouldn't be clickable.
 */
-        .main-menu:target + .backdrop,
-        .main-menu[aria-expanded="true"] + .backdrop {
-            position: absolute;
-            display: block;
-            content: "";
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 998;
-            background: #000;
-            background: rgba(0,0,0,.85);
-            cursor: default
-        }
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: default;
+}
 
 @supports (position: fixed) {
-    .main-menu,
-    .main-menu:target + .backdrop,
-    .main-menu[aria-expanded="true"] + .backdrop {
-        position: fixed
-    }
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
 }
 
 /*
@@ -252,55 +248,55 @@
  Horizontal menu
 */
 @media (min-width: 770px) {
+  .main-header {
+    justify-content: space-between;
+  }
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
 
-    .main-header {
-        justify-content: space-between;
-    }
-    .menu-toggle,
-    .main-menu .menu-close {
-        display: none
-    }
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
 
-    /* Undo positioning of off-canvas menu */
-    .main-menu {
-        position: relative;
-        left: auto;
-        top: auto;
-        height: auto
-    }
+  .main-menu ul {
+    display: flex;
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
 
-        .main-menu ul {
-            display: flex;
-            /* Undo off-canvas styling */
-            padding: 0;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            height: auto;
-            width: auto;
-            background: none
-        }
+  .main-menu ul a {
+    font-size: 1em;
+  }
 
-        .main-menu ul a {
-            font-size: 1em;
-        }
+  .main-menu a:link,
+  a:visited {
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    text-decoration: none;
+  }
 
-        .main-menu a:link, a:visited {
-            color: black;
-            border: 1px solid;
-            border-color: black;
-            text-decoration: none;
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #c00;
+  }
 
-        }
-
-            .main-menu a:hover,
-            .main-menu a:focus {
-                background: none; /* Remove background from off-canvas styling */
-                color: #c00
-            }
-
-        .main-menu a:hover, a:active {
-            background-color: #FF004F;
-            color: white
-        }  
+  .main-menu a:hover,
+  a:active {
+    background-color: #ff004f;
+    color: white;
+  }
 }

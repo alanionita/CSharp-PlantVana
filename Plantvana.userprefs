@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{CFE0ECCB-F576-422F-A1AF-B1BF2F78D349}|Default">
   <MonoDevelop.Ide.ItemProperties.Plantvana PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/main.css">
     <Files>
-      <File FileName="wwwroot/main.css" Line="49" Column="38" />
-      <File FileName="Views/Home/index.cshtml" Line="39" Column="31" />
+      <File FileName="wwwroot/main.css" Line="191" Column="25" />
+      <File FileName="Views/Home/index.cshtml" Line="50" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

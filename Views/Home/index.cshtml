@@ -59,20 +59,16 @@
             <p>"@Model.CurrentMessage"</p> 
       </section>          
       <section class="content">
-                <ul>
-                    @foreach(var restaurant in Model.Restaurants) {
-                        <li>
-                            <a asp-action="Details" asp-route-id="@restaurant.Id" alt="clickable area link to details page">
-                                <article class="card">
-                                    <img class="centered" src="@restaurant.Thumbnail"/>
-                                    <section class="card-info">    
-                                        <h3>@restaurant.Name</h3>
-                                    </section>        
-                                </article>
-                            </a>
-                        </li>            
-                    }
-                </ul>    
+            @foreach(var restaurant in Model.Restaurants) {
+                <a asp-action="Details" asp-route-id="@restaurant.Id" alt="clickable area link to details page">
+                    <article class="card">
+                        <img class="centered" src="@restaurant.Thumbnail"/>
+                        <section class="card-info">    
+                            <h1>@restaurant.Name</h1>
+                        </section>        
+                    </article>
+                </a>
+            }
       </section> 
     </main>
 </body>
