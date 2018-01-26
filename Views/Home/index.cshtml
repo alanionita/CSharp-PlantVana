@@ -3,6 +3,13 @@
     <link href="@Url.Content("~/main.css")" rel="stylesheet"/>
 }
 
+@functions {
+    public string TransformNamesToIdS()
+    {
+        return "Hello";
+    }
+}
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -33,6 +40,9 @@
                  aria-expanded="false"
                  aria-label="Main menu">
                 <ul>
+                    <li class="nav-item"><a asp-action="Create">Add restaurants</a></li>
+                    <li class="nav-item"><a href="">About</a></li>
+                    <li class="nav-item"><a href="">Contact</a></li>
                     <li class="nav-item">
                             <a href="#main-menu-toggle" 
                                class="menu-close"
@@ -45,9 +55,6 @@
                                     <span class="far fa-times-circle" aria-hidden="true"></span>
                             </a>
                     </li>    
-                    <li class="nav-item"><a asp-action="Create">Add restaurant</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
                 </ul>
             </nav>
              <a href="#main-menu-toggle"
@@ -58,17 +65,19 @@
       <section class="dailyMessage">
             <p>"@Model.CurrentMessage"</p> 
       </section>          
-      <section class="content">
+      <section class="content-wrapper">
+        <div class="content">
             @foreach(var restaurant in Model.Restaurants) {
                 <a asp-action="Details" asp-route-id="@restaurant.Id" alt="clickable area link to details page">
-                    <article class="card">
-                        <img class="centered" src="@restaurant.Thumbnail"/>
+                    <article class="card" id="@restaurant.Name.Replace(" ", "-")">
+                        <img src="@restaurant.Thumbnail"/>
                         <section class="card-info">    
                             <h1>@restaurant.Name</h1>
                         </section>        
                     </article>
                 </a>
             }
+        </div>
       </section> 
     </main>
 </body>

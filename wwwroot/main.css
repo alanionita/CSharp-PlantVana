@@ -8,10 +8,20 @@
 /* header section */
 .main-header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -19,6 +29,7 @@
 /* header logo section */
 .main-header h1 {
   padding-left: 20px;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   font-size: 2em;
   font-family: "Homemade Apple", cursive;
@@ -26,8 +37,7 @@
   margin: 0;
 }
 
-header menu section .main-header nav > ul {
-  display: flex;
+.main-header nav > ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -38,7 +48,7 @@ header menu section .main-header nav > ul {
   display: inline-block;
   margin: 0 1rem;
 }
-
+/* daily message styling */
 .dailyMessage p {
   font-family: "Merienda One", cursive;
   font-size: 1.5em;
@@ -48,19 +58,30 @@ header menu section .main-header nav > ul {
   text-shadow: 0.5px 0px black;
 }
 
+.content-wrapper {
+  text-align: center;
+}
+
 .content {
   margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1.5fr));
-  grid-gap: 1em;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 10px;
+  grid-row: auto;
   justify-items: center;
+  width: 95%;
+}
+.content a {
+  height: 350px;
+  width: 350px;
 }
 
 .card {
   position: relative;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.6s;
   transition: 0.6s;
   height: 350px;
   width: 350px;
@@ -70,6 +91,7 @@ header menu section .main-header nav > ul {
 }
 
 .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -83,7 +105,11 @@ header menu section .main-header nav > ul {
   font-size: 30px;
   text-shadow: 2px 1px black;
   display: grid;
+  display: -ms-grid;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -94,8 +120,10 @@ header menu section .main-header nav > ul {
 .card img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 5px;
+  -webkit-filter: brightness(60%);
   filter: brightness(60%);
 }
 
@@ -141,35 +169,42 @@ header menu section .main-header nav > ul {
 */
 .main-menu {
   position: absolute;
-  left: -400px;
+  left: -360px;
   top: 0;
   height: 100%;
   overflow-y: scroll;
   overflow-x: visible;
+  -webkit-transition: left 0.4s ease, -webkit-box-shadow 0.4s ease;
+  transition: left 0.4s ease, -webkit-box-shadow 0.4s ease;
   transition: left 0.4s ease, box-shadow 0.4s ease;
+  transition: left 0.4s ease, box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
   z-index: 999;
 }
 
 .main-menu ul {
-  display: grid;
   list-style: none;
   margin: 0;
   padding: 2em 0 0;
   /* Hide shadow w/ -8px while 'closed' */
   -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   height: 100%;
-  width: 400px;
+  width: 360px;
   background: #ff004f;
-  grid-row: auto;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-content: flex-start
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 .main-menu a {
   text-transform: uppercase;
   display: block;
+  grid-row: auto;
   padding: 0.75em 15px;
   font-family: sans-serif;
   line-height: 1em;
@@ -200,7 +235,6 @@ header menu section .main-header nav > ul {
 .main-menu[aria-expanded="true"] {
   left: 0;
   outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
 }
@@ -247,8 +281,10 @@ header menu section .main-header nav > ul {
  Larger screen styling
  Horizontal menu
 */
-@media (min-width: 770px) {
+@media (min-width: 801px) {
   .main-header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .menu-toggle,
@@ -265,11 +301,12 @@ header menu section .main-header nav > ul {
   }
 
   .main-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* Undo off-canvas styling */
     padding: 0;
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
     height: auto;
     width: auto;
